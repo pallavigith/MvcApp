@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Employee";
+}
+
+<h2>Employee</h2>
+<table class="table table-bordered table-hover"> </table>
+<thead>
+    <tr>
+        <th> Id</th>
+        <th> Name</th>
+        <th> Company</th>
+        <th> Salary</th>
+
+
+
+
+    </tr>
+</thead>
+<tbody>
+    @foreach (MvcApp.Controllers.Employee Employee in ViewBag.EmployeeList)
+            {
+    <tr>
+        <td> @Employee.Id</td>
+        <td> @Employee.Name</td>
+        <td> @Employee.Company</td>
+
+        <td> @Employee.Salary</td>
+
+
+
+
+
+    </tr>
+            }
+
+
+</tbody>
+
